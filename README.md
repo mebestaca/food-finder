@@ -1,4 +1,4 @@
-# Recipe Finder
+# Recipe Finder [WIP]
 
 A flutter project that will provide possible recipes based on the ingredients provided by the user.
 
