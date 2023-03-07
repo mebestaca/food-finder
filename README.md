@@ -1,16 +1,13 @@
-# recipe_finder
+# Recipe Finder
 
-A new Flutter project.
+A flutter project that will provide possible recipes based on the ingredients provided by the user.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+  - [Tags] - when searching for a recipe the user can list multiple tags to help narrow the search
+  - [Web] - this project will have its own website
+  - [Desktop] - this app will have desktop support
+  
+## The Goal
+  - [Rest API] - learn about rest api
+  - [Web] - learn about web deployment
+  - [Desktop] - learn about desktop deployment
