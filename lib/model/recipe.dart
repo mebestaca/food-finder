@@ -22,24 +22,24 @@ class Recipe {
     required this.likes,
   });
 
-  int id;
-  String title;
-  String image;
-  ImageType imageType;
-  int usedIngredientCount;
-  int missedIngredientCount;
+  int? id;
+  String? title;
+  String? image;
+  ImageType? imageType;
+  int? usedIngredientCount;
+  int? missedIngredientCount;
   List<SedIngredient> missedIngredients;
   List<SedIngredient> usedIngredients;
   List<SedIngredient> unusedIngredients;
-  int likes;
+  int? likes;
 
   factory Recipe.fromJson(Map<String, dynamic> json) => Recipe(
-    id: json["id"],
-    title: json["title"],
-    image: json["image"],
-    imageType: imageTypeValues.map[json["imageType"]] as ImageType,
-    usedIngredientCount: json["usedIngredientCount"],
-    missedIngredientCount: json["missedIngredientCount"],
+    id: json["id"] ?? "",
+    title: json["title"] ?? "",
+    image: json["image"] ?? "",
+    imageType: imageTypeValues.map[json["imageType"]] ?? ImageType.jpg,
+    usedIngredientCount: json["usedIngredientCount"] ?? 0,
+    missedIngredientCount: json["missedIngredientCount"] ?? 0,
     missedIngredients: List<SedIngredient>.from(json["missedIngredients"].map((x) => SedIngredient.fromJson(x))),
     usedIngredients: List<SedIngredient>.from(json["usedIngredients"].map((x) => SedIngredient.fromJson(x))),
     unusedIngredients: List<SedIngredient>.from(json["unusedIngredients"].map((x) => SedIngredient.fromJson(x))),
@@ -82,32 +82,32 @@ class SedIngredient {
     this.extendedName,
   });
 
-  int id;
-  double amount;
-  String unit;
-  String unitLong;
-  String unitShort;
-  String aisle;
-  String name;
-  String original;
-  String originalName;
-  List<String> meta;
-  String image;
+  int? id;
+  double? amount;
+  String? unit;
+  String? unitLong;
+  String? unitShort;
+  String? aisle;
+  String? name;
+  String? original;
+  String? originalName;
+  List<String?> meta;
+  String? image;
   String? extendedName;
 
   factory SedIngredient.fromJson(Map<String, dynamic> json) => SedIngredient(
-    id: json["id"],
-    amount: json["amount"]?.toDouble(),
-    unit: json["unit"],
-    unitLong: json["unitLong"],
-    unitShort: json["unitShort"],
-    aisle: json["aisle"],
-    name: json["name"],
-    original: json["original"],
-    originalName: json["originalName"],
+    id: json["id"] ?? 0,
+    amount: json["amount"]?.toDouble() ?? 0,
+    unit: json["unit"] ?? "",
+    unitLong: json["unitLong"] ?? "",
+    unitShort: json["unitShort"] ?? "",
+    aisle: json["aisle"] ?? "",
+    name: json["name"] ?? "",
+    original: json["original"] ?? "",
+    originalName: json["originalName"] ?? "",
     meta: List<String>.from(json["meta"].map((x) => x)),
-    image: json["image"],
-    extendedName: json["extendedName"],
+    image: json["image"] ?? "",
+    extendedName: json["extendedName"] ?? "",
   );
 
   Map<String, dynamic> toJson() => {
