@@ -37,7 +37,7 @@ class Recipe {
     id: json["id"],
     title: json["title"],
     image: json["image"],
-    imageType: imageTypeValues.map[json["imageType"]]!,
+    imageType: imageTypeValues.map[json["imageType"]] as ImageType,
     usedIngredientCount: json["usedIngredientCount"],
     missedIngredientCount: json["missedIngredientCount"],
     missedIngredients: List<SedIngredient>.from(json["missedIngredients"].map((x) => SedIngredient.fromJson(x))),
