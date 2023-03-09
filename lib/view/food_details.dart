@@ -18,14 +18,14 @@ class _FoodDetailsState extends State<FoodDetails> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(recipe.title),
+        title: Text(recipe.title ?? ""),
       ),
       body: Hero(
-        tag: recipe.id,
+        tag: recipe.id.toString(),
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(recipe.image)
+              image: NetworkImage(recipe.image ?? "")
             )
           ),
         )
