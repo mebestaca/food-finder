@@ -144,6 +144,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  sliver_header_delegate:
+    dependency: "direct main"
+    description:
+      name: sliver_header_delegate
+      sha256: d71a6a9003256651d6a63280cec2d7efe18bfe675b80e9da5dd61e419b066d81
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
   source_span:
     dependency: transitive
     description:
@@ -210,3 +218,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.2 <3.0.0"
+  flutter: ">=1.17.0"
