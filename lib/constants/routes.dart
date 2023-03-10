@@ -1,3 +1,4 @@
 class Routes{
-  static const String foodRoute = "/food";
+  static const String recipeDetailRoute = "/recipe_detail";
+  static const String recipeListRoute = "/recipe_list";
 }
