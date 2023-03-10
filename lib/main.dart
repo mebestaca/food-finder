@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipe_finder/shared/sharedTheme.dart';
 import 'package:recipe_finder/view/food_details.dart';
 import 'package:recipe_finder/view/home.dart';
+import 'package:recipe_finder/view/recipe_list.dart';
 
 import 'constants/routes.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: mainTheme,
       home: const Home(),
       routes: {
-        Routes.foodRoute : (context) => const FoodDetails()
+        Routes.recipeDetailRoute : (context) => const FoodDetails(),
+        Routes.recipeListRoute : (context) => const RecipeList()
       },
     );
   }
