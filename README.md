@@ -1,13 +1,15 @@
-# Recipe Finder [WIP]
+# Recipe Finder (Meal Compiler)
 
 A flutter project that will suggest possible recipes based on the ingredients provided by the user.
 
 ## Features
-  - [Tags] - when searching for a recipe the user can list multiple tags to help narrow the search
-  - [Web] - this project will have its own website
-  - [Desktop] - this app will have desktop support
+[Ingredients List] - user can add multiple ingredients. </br>
+[Recipe List] - when the user taps search, the app will then display an array of Recipe with image and name. </br>
+[Recipe Details] - when the user taps on the image of the Recipe the app will display the details of the recipe with a list of ingredients that the user did not include on the Ingredients List. </br>
   
-## The Goal
-  - [Rest API] - learn about rest api
-  - [Web] - learn about web deployment
-  - [Desktop] - learn about desktop deployment
+## Technology Used
+  - Flutter </br>
+  - Restful Api
+
+## Screenshots
+![alt text](https://github.com/mebestaca/recipe-finder/blob/master/screenshots/meal-compiler.png?raw=true)
